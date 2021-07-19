@@ -37,3 +37,9 @@ var queue = {};
     }
   });
 ```
+# 6) Expirience
+I was at the university dev.team where we did a the Unity [game](https://drive.google.com/drive/folders/1VBdITsPAeUBK4-mQnWFpbi6iomVQAV3V)
+# 7) Education
+I'm study at the Urfu. 
+# 8) English
+My English is about B1-B2 lvl, as the English teacher told me )
