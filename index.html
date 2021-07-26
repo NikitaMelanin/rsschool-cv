@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melanin Nikita - CV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="wrapper">
+            <div class="name-photo">
+                <img class="photo" src="Image/image.jpg" alt="Photo" width="200" height="250">
+                <section class="name">
+                    <h1>Melanin Nikita<h1>Intern-developer</h1></h1>
+                    
+                </section>
+            </div>
+        </div>
+    </header>
+
+    <main class="wrapper">
+        <div class="container">
+            <div class="About me">
+                <h2>About me</h2>
+                <p class="text">On real time, I'm a intern-beginner developer. 
+                    I am a perfectionist, If I start doing something, I’m only gonna finish it when it’s perfect. 
+                    I want to be a full-stack developer in the future. 
+                    But the real time, my goal is to learn as much as posiible informations about programming/develop, also I’m interested in learning different languages - trying something new, standing in one place is not my.
+                </p>
+
+            </div>
+            <div class="Contacts">
+                <h2>Contacts</h2>
+                <ul>
+                    <li><a href ="http://vk.com//preter_human">VK</a></li>
+                    <li>Email: cool.melanin@list.ru</li>
+                    
+                </ul>
+            </div>
+            <section>
+                <div class="Education">
+                    <h2>Education</h2>
+                    <p>I'm study at the Urfu.</p>
+                </div>
+            </section>
+            <div class="Experience">
+                <h2>Experience</h2>
+                <p class="text">I was at the university dev.team where we did a the Unity <a href="https://drive.google.com/drive/folders/1VBdITsPAeUBK4-mQnWFpbi6iomVQAV3V" >Game</a></p>
+            </div>
+            <div class="Example code">
+                <h2>Example code</h2>
+                <pre>
+                    <code style="margin-right: 90%;">
+                    
+                        const Discord = require ('discord.js'); // framework discord.js
+                        const client = new Discord.Client(); // client announcement
+                        const comms = require ("./comms.js"); //add comnands
+                        const fs = require ('fs'); // node.js module
+                        const yt = require('ytdl-core');//player
+                        const searchYoutube = require('youtube-api-v3-search');//search
+                        const config = require ('./cfg.json'); // parm cfg client
+
+                        let token = config.token;
+                        let prefix = config.prefix;
+                        let youtubeapi = config.youtube_api_key;
+                        var queue = {};
+                        client.on('message', (message) => { // reaction on message
+                                if (message.author.username != client.user.username && message.author.discriminator != client.user.discriminator) {
+                                    var comm = message.content.toLowerCase().trim() + " ";
+                                    var comm_name = comm.slice(0, comm.indexOf(" "));
+                                    var messArr = comm.split(" ");
+                                    for (comm_count in comms.comms) {
+                                        var comm2 = prefix + comms.comms[comm_count].name;
+                                            if (comm2 == comm_name) {
+                                                comms.comms[comm_count].out(client, message, messArr);
+         }
+      }
+                                if (!message.content.startsWith(config.prefix)) return;
+  });
+                    </code>
+                </pre>
+            </div>
+            <div class="Skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>С#,Unity</li>
+                    <li>HTML,CSS,NodeJS</li>
+                    <li>Python</li>
+                    <li>Git</li>
+                
+                </ul>
+                <h2>Level of English</h2>
+                
+                <p class="text">My English is about B1-B2 lvl, as the English teacher told me )</p>
+            
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <time class="main-text" id="time">2021</time>
+          <a href="https://github.com/urfuteam"><img class="logo-git" src="Image/Octocat.png"alt="logo" width="150" height="120" ></a>
+          <a href="https://rs.school/js/"><img class="logo-rss" src="https://rs.school/images/rs_school_js.svg"alt="logo"></a>
+        </div>
+      </footer>
+</body>
+</html>
