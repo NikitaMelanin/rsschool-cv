@@ -46,4 +46,7 @@ a:hover {
   padding-left: 0cm;
   max-width: 10rem;
 }
-
+.photo {
+  width: 25%;
+  height: 15%;
+}
