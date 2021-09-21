@@ -1,1 +1,1 @@
-https://URFUTEAM.github.io/rsschool-cv/
+https://NikitaMelanin.github.io/rsschool-cv/
